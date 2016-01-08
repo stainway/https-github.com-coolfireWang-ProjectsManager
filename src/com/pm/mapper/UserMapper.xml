@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pm.mapper.UserMapper">
+<!-- 通过USERNAME获取数据 -->
+	<select id="findByUId" parameterType="pd" resultType="pd">
+	select USERID,USERNAME,PASSWORD,NAME,LASTLOGIN,STATUS,EMAIL,PHONE
+	from sys_user
+	where USERNAME=#{USERNAME} and PASSWORD=#{PASSWORD}
+	</select>
+	
+	<update id="updateLastlogin" parameterType="pd">
+	  update sys_user set LASTLOGIN=#{LASTLOGIN} where USERID=#{USERID}
+	</update>
+</mapper>
