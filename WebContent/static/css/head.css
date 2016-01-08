@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+.navbar-inverse{
+	background:#438eb9;
+	border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 45px;
+    position: relative;
+}
+.nav_ace-nav_pull_right
+{
+	float:right;
+}
+.nav_ace-nav_pull_right li{
+	padding-left:10px;
+	display:inline;
+}
+.user_menu li{
+	display:outline;
+}
